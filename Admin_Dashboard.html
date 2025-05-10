@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0px;
+            background-color: #bd8181;
+        }
+
+        .container {
+            background-color: #885454;
+            /* padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+
+        .container h2 {
+            color: #140f0f;
+            margin-top: 0;
+            text-align: left;
+        }
+
+        .container hr {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .action-box {
+            background-color: #ebc5c5;
+            border: 1px solid #763c3c;
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            width: calc(25% - 15px);
+            /* Roughly 4 components in a row with spacing */
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .action-box:hover {
+            background-color: #f77e7e;
+        }
+
+        .action-icon {
+            margin-bottom: 10px;
+        }
+
+        .action-icon img {
+            max-width: 50px;
+            height: auto;
+        }
+
+        .action-label {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .action-box {
+                width: calc(50% - 15px);
+                /* Two components in a row */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .action-box {
+                width: 100%;
+                /* One component per row */
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h2>Attendance System</h2>
+        <hr>
+    </div>
+    <div>
+        <main>
+
+            <div class="actions">
+                <div class="action-box" onclick="alert('Take Attendance clicked')">
+                    <div class="action-icon"><img src="view\resources\current semester.svg" alt="Add Teacher"></div>
+                    <div class="action-label">Add Teacher</div>
+                </div>
+
+                <div class="action-box" onclick="alert('View Attendance clicked')">
+                    <div class="action-icon"><img src="view\resources\current semester.svg" alt="Edit Teacher"></div>
+                    <div class="action-label">Edit Teacher</div>
+                </div>
+
+                <div class="action-box" onclick="alert('My Classes clicked')">
+                    <div class="action-icon"><img src="view\resources\student.svg" alt="Add Student"></div>
+                    <div class="action-label">Add Student</div>
+                </div>
+
+                <div class="action-box" onclick="alert('Add Class clicked')">
+                    <div class="action-icon"><img src="view\resources\student.svg" alt="Edit Student"></div>
+                    <div class="action-label">Edit Student</div>
+                </div>
+
+                <div class="action-box" onclick="alert('Take Attendance clicked')">
+                    <div class="action-icon"><img src="view\resources\add.svg" alt="Add Class"></div>
+                    <div class="action-label">Add Class</div>
+                </div>
+                <div class="action-box" onclick="alert('View Attendance clicked')">
+                    <div class="action-icon"><img src="view\resources\add.svg" alt="Edit class"></div>
+                    <div class="action-label">Edit Class</div>
+                </div>
+                <div class="action-box" onclick="alert('My Classes clicked')">
+                    <div class="action-icon"><img src="view\resources\Previous semester.svg" alt="Add Faculty"></div>
+                    <div class="action-label">Add Faculty</div>
+                </div>
+                <div class="action-box" onclick="alert('Add Class clicked')">
+                    <div class="action-icon"><img src="view\resources\Previous semester.svg" alt="Edit Faculty"></div>
+                    <div class="action-label">Edit Faculty</div>
+                </div>
+                <div class="action-box" onclick="alert('Take Attendance clicked')">
+                    <div class="action-icon"><img src="view\resources\add subject.svg" alt="Add Subject"></div>
+                    <div class="action-label">Add Subject</div>
+                </div>
+                <div class="action-box" onclick="alert('View Attendance clicked')">
+                    <div class="action-icon"><img src="view\resources\add subject.svg" alt="Edit Subject "></div>
+                    <div class="action-label">Edit Subject</div>
+                </div>
+                <div class="action-box" onclick="alert('My Classes clicked')">
+                    <div class="action-icon"><img src="view\resources\Add Program.svg" alt="Add Program"></div>
+                    <div class="action-label">Add Program</div>
+                </div>
+                <div class="action-box" onclick="alert('Add Class clicked')">
+                    <div class="action-icon"><img src="view\resources\Add Program.svg" alt="Edit Program"></div>
+                    <div class="action-label">Edit Program</div>
+                </div>
+
+        </main>
+    </div>
+
+
+
+
+</body>
+
+</html>
