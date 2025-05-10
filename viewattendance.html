@@ -56,9 +56,9 @@
         }
 
         .sidebar a img {
-            width: 20px;
+            width: 30px;
             /* Set a fixed width for the images */
-            height: 20px;
+            height: 30px;
             /* Set a fixed height for the images */
             margin-right: 10px;
             /* Add spacing between image and text */
@@ -120,11 +120,15 @@
         }
 
         .filters select option:disabled {
-            color: #999;
+            color: #857575;
         }
 
+        .filters style{
+            height: 10;
+        }
         .filters input[type="date"] {
             width: 150px;
+           
             /* Adjust width as needed */
         }
 
@@ -133,11 +137,12 @@
             border-collapse: collapse;
             margin-bottom: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            background-color: #ffffff;
         }
 
         thead th {
-            background-color: #B9B9B9;
-            color: white;
+            background-color: #ffffff;
+            color: rgb(6, 4, 4);
             font-weight: bold;
             padding: 10px;
             text-align: center;
@@ -147,22 +152,22 @@
         tbody td {
             padding: 8px;
             text-align: center;
-            border: 1px solid #1c0808;
+            border: 1px solid #110606;
         }
 
         tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: #ffffff;
         }
 
         .actions {
             display: flex;
-            gap: 10px;
+            gap: 10px;  
             justify-content: flex-end;
         }
 
         .actions button {
-            background-color: #5cb85c;
-            color: white;
+            background-color: #BFBFBF;
+            color: rgb(12, 9, 9);
             border: none;
             padding: 10px 15px;
             border-radius: 4px;
@@ -172,23 +177,23 @@
         }
 
         .actions button:hover {
-            background-color: #4cae4c;
+            background-color: #bfbfbf;
         }
 
         .actions button:nth-child(2) {
-            background-color: #f0ad4e;
+            background-color: #bfbfbf;
         }
 
         .actions button:nth-child(2):hover {
-            background-color: #eea236;
+            background-color: #bfbfbf;
         }
 
         .actions button:nth-child(3) {
-            background-color: #d9534f;
+            background-color: #bfbfbf;
         }
 
         .actions button:nth-child(3):hover {
-            background-color: #c9302c;
+            background-color: #bfbfbf;
         }
 
         /* Specific styles for the subject and date information */
@@ -228,7 +233,6 @@
         <h2>Attendance System</h2>
         <hr>
         <ul>
-
             <li><a href=""><img src="view\resources\Dashboard.svg" alt="Dashboard Icon">Dashboard</a> </li>
             <li><a href=""><img src="view\resources\Take attendance.svg" alt="Take Attendance Icon">Take
                     Attendance</a></li>
