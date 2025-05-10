@@ -48,7 +48,7 @@
             /* Use Flexbox for alignment */
             align-items: center;
             /* Vertically align items */
-            color: rgb(18, 17, 17);
+            color: white;
             text-decoration: none;
             padding: 10px 15px;
             border-radius: 5px;
@@ -79,7 +79,6 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        
 
         h2 {
             color: #0b2135;
@@ -93,7 +92,7 @@
         }
 
         .filters {
-        display: flex;
+            display: flex;
             gap: 20px;
             margin-bottom: 20px;
             align-items: center;
@@ -121,11 +120,15 @@
         }
 
         .filters select option:disabled {
-            color: #999;
+            color: #857575;
         }
 
+        .filters style{
+            height: 10;
+        }
         .filters input[type="date"] {
             width: 150px;
+           
             /* Adjust width as needed */
         }
 
@@ -138,8 +141,8 @@
         }
 
         thead th {
-            background-color: #d7cfcf;
-            color: rgb(10, 10, 10);
+            background-color: #ffffff;
+            color: rgb(6, 4, 4);
             font-weight: bold;
             padding: 10px;
             text-align: center;
@@ -149,12 +152,51 @@
         tbody td {
             padding: 8px;
             text-align: center;
-            border: 1px solid #1c0808;
+            border: 1px solid #110606;
         }
 
         tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }  /* Specific styles for the subject and date information */
+            background-color: #ffffff;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;  
+            justify-content: flex-end;
+        }
+
+        .actions button {
+            background-color: #BFBFBF;
+            color: rgb(12, 9, 9);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .actions button:hover {
+            background-color: #bfbfbf;
+        }
+
+        .actions button:nth-child(2) {
+            background-color: #bfbfbf;
+        }
+
+        .actions button:nth-child(2):hover {
+            background-color: #bfbfbf;
+        }
+
+        .actions button:nth-child(3) {
+            background-color: #bfbfbf;
+        }
+
+        .actions button:nth-child(3):hover {
+            background-color: #bfbfbf;
+        }
+
+        /* Specific styles for the subject and date information */
         .container>div:nth-child(4),
         .container>div:nth-child(5) {
             display: flex;
@@ -183,8 +225,6 @@
             font-size: 14px;
             width: 120px;
         }
-
-       
     </style>
 </head>
 
@@ -207,7 +247,7 @@
     </div>
 
     <div class="container">
-        <h2>My Classes</h2>
+        <h2>Take Attendance</h2>
         <hr>
         <div class="filters">
             <div>
@@ -241,34 +281,40 @@
                     <option>DSAP</option>
                 </select>
             </div>
-            
+            <div>
+                <label for="Date">Date</label>
+                <input type="date" id="date" required>
+            </div>
         </div>
 
 
-        
+        <div style="display: flex; justify-content: space-between;">
+            <span>Subject: Digital Signal Analysis and Processing</span>
+            <span><label for="date">Date:</label>
+            <input id="s-date" type="date" required>
+            </span>
+        </div>
+
+        <div style="display: flex; justify-content: space-between;">
+            <span>Course Code: ELE 111</span>
+            
+        </div>
 
         <table>
             <thead>
                 <tr>
                     <th rowspan="1">SN</th>
-                    <th rowspan="1">Course Name</th>
-                    <th rowspan="1">Course code</th>
-                    <th colspan="1">Starting Date</th>
-                    <th rowspan="1">Finishing Date</th>
-                    <th rowspan="1">Credit Hour</th>
-                    <th rowspan="1">Estimated Class</th>
-                    <th rowspan="1">Taken Class</th>
-                    <th rowspan="1">Remaining Class</th>
-
+                    <th rowspan="1"> Name</th>
+                    <th rowspan="1">Roll Number</th>
+                    <th colspan="1">Attended</th>
+                    <th rowspan="1">Application</th>
+                    <th rowspan="1">Action</th>
                 <tr>
                 
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -282,9 +328,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -293,15 +336,9 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -316,15 +353,9 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -338,15 +369,9 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>8</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -360,15 +385,9 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>10</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -382,15 +401,9 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>12</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -404,14 +417,13 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
-
             </tbody>
         </table>
-        
+        <div class="actions">
+            <button>Edit</button>
+            <button>Verify</button>
+        </div>
     </div>
     
 </body>
